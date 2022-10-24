@@ -10,12 +10,14 @@
 %%%%%%%%                                                                                             %%%%%%%%
 %%%%%%%%    When adding to the bibliography, please keep things sorted by year.                      %%%%%%%%
 %%%%%%%%                                                                                             %%%%%%%%
+%%%%%%%%    Web sites, etc., at the end                                                              %%%%%%%%
+%%%%%%%%                                                                                             %%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 %%  List of CS Education articles, sorted by year, and, within that, alphabetically by first author
 %%    Also, we could add comments like % TAG: ExperimentalDesign, and then search for them
-%% Tags include: ExperimentalDesign, NotionalMachine, Recursion, LowLevel, OOP,
+%% Tags include: ExperimentalDesign, NotionalMachine, Recursion, LowLevel, OOP, Accessibility
 
 %%%%%%%%%%%%%%  Articles published in 1981  %%%%%%%%%%%%%%
 
@@ -23,7 +25,7 @@
 @article{DuBoulay:Notional81,
 title = {The black box inside the glass box: presenting computing concepts to novices},
 journal = {International Journal of Man-Machine Studies},
-volume = {14},
+volume = {14}, LowLevel, OOP,
 number = {3},
 pages = {237-249},
 year = {1981},
@@ -43,8 +45,11 @@ characterization of the notional machine, expressed in either text or pictures o
 We examine the simplicity and visibility of three systems, each designed to provide programming experience
 to different populations of novices.}
 }
+
 %%%%%%%%%%%%%%  Articles published in 1983  %%%%%%%%%%%%%%
-@article{Kahney:Novice&Rec83,
+
+; TAG:Recursion
+@inproceedings{Kahney:NoviceRec83,
 author = {Kahney, Hank},
 title = {What Do Novice Programmers Know about Recursion},
 year = {1983},
@@ -59,6 +64,46 @@ pages = {235–239},
 numpages = {5},
 location = {Boston, Massachusetts, USA},
 series = {CHI '83}
+}
+
+
+%%%%%%%%%%%%%%  Articles published in 1984  %%%%%%%%%%%%%%
+
+% inproceedings{10.1145/800039.808655,
+@inproceedings{Ford84:Recursion,
+author = {Ford, Gary},
+title = {An Implementation-Independent Approach to Teaching Recursion},
+year = {1984},
+isbn = {0897911261},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/800039.808655},
+doi = {10.1145/800039.808655},
+abstract = {The principle of abstraction, of separating a concept from a particular implementation of that concept, is gaining increasingly widespread use in programming and problem solving, and in teaching these subjects. A method of teaching the abstract concept of recursion, independent of its implementation, is presented.},
+booktitle = {Proceedings of the Fifteenth SIGCSE Technical Symposium on Computer Science Education},
+pages = {213–216},
+numpages = {4},
+series = {SIGCSE '84},
+annotate = {Bases thinking about recursion on ``procedural abstraction'' and ``math. induction''; interesting examples focusing on understanding of {\em corrrectness} of algorithms, with both ``weak'' and ``strong'' induction; an interesting claim that induction is more fundamental than axioms and theorems.}
+}
+
+@article{10.1145/952980.808655,
+author = {Ford, Gary},
+title = {An Implementation-Independent Approach to Teaching Recursion},
+year = {1984},
+issue_date = {February 1984},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {16},
+number = {1},
+issn = {0097-8418},
+url = {https://doi.org/10.1145/952980.808655},
+doi = {10.1145/952980.808655},
+abstract = {The principle of abstraction, of separating a concept from a particular implementation of that concept, is gaining increasingly widespread use in programming and problem solving, and in teaching these subjects. A method of teaching the abstract concept of recursion, independent of its implementation, is presented.},
+journal = {SIGCSE Bull.},
+month = {jan},
+pages = {213–216},
+numpages = {4}
 }
 
 %%%%%%%%%%%%%%  Articles published in 1986  %%%%%%%%%%%%%%
@@ -110,7 +155,7 @@ eprint = {
 
 %%%%%%%%%%%%%%  Articles published in 1996  %%%%%%%%%%%%%%
 
-@book{AS96,
+@book{AS96:SICP,
 author = {Abelson, Harold and Sussman, Gerald J.},
 title = {Structure and Interpretation of Computer Programs},
 year = {1996},
@@ -118,6 +163,7 @@ isbn = {0262011530},
 publisher = {MIT Press},
 address = {Cambridge, MA, USA},
 edition = {2nd},
+url = {mitpress.mit.edu/sites/default/files/sicp/full-text/book/book.html},
 abstract = {From the Publisher:With an analytical and rigorous approach to problem solving and programming techniques,this book is oriented toward engineering. Structure and Interpretation of Computer Programs emphasizes the central role played by different approaches to dealing with time in computational models. Its unique approach makes it appropriate for an introduction to computer science courses,as well as programming languages and program design.}
 }
 
@@ -216,39 +262,36 @@ location = {Reno, Navada, USA},
 series = {SIGCSE '03}
 }
 
+
+% TAG: Recursion
+% ACM tag 
+@article{Bloch:OORecursion03,
+author = {Bloch, Stephen},
+title = {Teaching Linked Lists and Recursion without Conditionals or Null},
+year = {2003},
+issue_date = {May 2003},
+publisher = {Consortium for Computing Sciences in Colleges},
+address = {Evansville, IN, USA},
+doi = {10.5555/771832.771849},
+url = {https://dl.acm.org/doi/10.5555/771832.771849},
+volume = {18},
+number = {5},
+issn = {1937-4771},
+abstract = {We describe a natural and principled approach to teaching linked data structures and recursion in CS0, CS1 or CS2, and compare the difficulty of using this approach in C++, Java, and Scheme.},
+journal = {J. Comput. Sci. Coll.},
+month = {may},
+pages = {96–108},
+numpages = {13}
+}
+
+  
+
 %%%%%%%%%%%%%%  Articles published in 2004  %%%%%%%%%%%%%%
 
 
-@article{10.1145/792548.612004,
-author = {G\"{o}tschi, Tina and Sanders, Ian and Galpin, Vashti},
-title = {Mental Models of Recursion},
-year = {2003},
-issue_date = {January 2003},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-volume = {35},
-number = {1},
-issn = {0097-8418},
-url = {https://doi.org/10.1145/792548.612004},
-doi = {10.1145/792548.612004},
-abstract = {Recursion is a fundamental concept in Computer Science. A student's knowledge of recursion
-can be termed their mental model of recursion. A student's mental model is viable
-if it allows them to accurately and consistently represent the mechanics of recursion.
-Non-viable mental models are constructed if students have misconceptions about the
-mechanisms of recursion or have misconceptions about concepts fundamental to recursion.
-This paper presents a study of the mental models of recursion that first year students
-at the University of the Witwatersrand have constructed in 2000, 2001 and 2002. It
-was found that while the majority of students constructed the viable copies model,
-many non-viable models such as the looping, active, step, magic, return-value and
-various odd models were also constructed. Identifying the models that students have
-can allow lecturers to target individual students' specific problems and analysis
-of the models can provide insight into learning.},
-journal = {SIGCSE Bull.},
-month = jan,
-pages = {346–350},
-numpages = {5},
-keywords = {recursion, mental models, programming, learning, pedagogy, constructivism}
-}
+% we had listed here article{10.1145/792548.612004,
+% though the year was 2003, and it's a copy of GSG:Recursion03 above :-(
+
 
 @article{TJ04:Python,
 author = {Tony Jenkins},
@@ -298,6 +341,47 @@ keywords = {conceptions, phenomenography, misconceptions, variation theory}
 }
 
 %%%%%%%%%%%%%%  Articles published in 2006  %%%%%%%%%%%%%%
+
+% inproceedings{10.1145/1140124.1140162,
+@inproceedings{SGG06:RecursionModels2,
+author = {Sanders, Ian and Galpin, Vashti and G\"{o}tschi, Tina},
+title = {Mental Models of Recursion Revisited},
+year = {2006},
+isbn = {1595930558},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1140124.1140162},
+doi = {10.1145/1140124.1140162},
+abstract = {Students struggle to understand recursion and we need to find good ways to teach the concept. We believe that an understanding of the mental models of recursion that students develop will assist us in teaching them more effectively. In 2003 we reported on a study of the mental models our students developed. This paper discusses some changes that we made to our teaching in 2003 after that study. An analysis of the students' mental models in 2003, 2004 and 2005 shows that more students are developing the copies model of recursion which is always a viable model.},
+booktitle = {Proceedings of the 11th Annual SIGCSE Conference on Innovation and Technology in Computer Science Education},
+pages = {138–142},
+numpages = {5},
+keywords = {mental models, recursion},
+location = {Bologna, Italy},
+series = {ITICSE '06}
+}
+
+  
+
+@article{10.1145/1140123.1140162,
+author = {Sanders, Ian and Galpin, Vashti and G\"{o}tschi, Tina},
+title = {Mental Models of Recursion Revisited},
+year = {2006},
+issue_date = {September 2006},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {38},
+number = {3},
+issn = {0097-8418},
+url = {https://doi.org/10.1145/1140123.1140162},
+doi = {10.1145/1140123.1140162},
+abstract = {Students struggle to understand recursion and we need to find good ways to teach the concept. We believe that an understanding of the mental models of recursion that students develop will assist us in teaching them more effectively. In 2003 we reported on a study of the mental models our students developed. This paper discusses some changes that we made to our teaching in 2003 after that study. An analysis of the students' mental models in 2003, 2004 and 2005 shows that more students are developing the copies model of recursion which is always a viable model.},
+journal = {SIGCSE Bull.},
+month = {jun},
+pages = {138–142},
+numpages = {5},
+keywords = {recursion, mental models}
+}
 
 @inproceedings{TH06,
 author = {Teif, Mariana and Hazzan, Orit},
@@ -629,6 +713,25 @@ series = {SIGCSE '14},
 	author = {Guo, Philip},
 }
 
+@article{10.1145/2632036,
+author = {Guzdial, Mark},
+title = {Why the U.S. is Not Ready for Mandatory CS Education},
+year = {2014},
+issue_date = {August 2014},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {57},
+number = {8},
+issn = {0001-0782},
+url = {https://doi.org/10.1145/2632036},
+doi = {10.1145/2632036},
+abstract = {The Communications Web site, http://cacm.acm.org, features more than a dozen bloggers in the BLOG@CACM community. In each issue of Communications, we'll publish selected posts or excerpts.twitterFollow us on Twitter at http://twitter.com/blogCACMhttp://cacm.acm.org/blogs/blog-cacmMark Guzdial considers the consequences of requiring all schoolchildren to study computer science.},
+journal = {Commun. ACM},
+month = {aug},
+pages = {8–9},
+numpages = {2}
+}
+
 %%%%%%%%%%%%%%  Articles published in 2015  %%%%%%%%%%%%%%
 
 @article{X15,
@@ -671,7 +774,48 @@ location = {Arequipa, Peru},
 series = {ITiCSE '16}
 }
 
+@inproceedings{10.1145/2839509.2844628, author = {Wang, Jennifer and Hong, Hai and Ravitz, Jason and Hejazi Moghadam, Sepehr}, 
+title = {Landscape of K-12 Computer Science Education in the U.S.: Perceptions, Access, and Barriers}, 
+year = {2016},
+isbn = {9781450336857},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2839509.2844628},
+doi = {10.1145/2839509.2844628}, abstract = {Through surveys of 1,673 students, 1,685 parents, 1,013 teachers, 9,693 principals, and 1,865 superintendents across the United States, this study explores perceptions, access, and barriers to computer science education at the K-12 level. 
+We found most respondents were unable to distinguish computer literacy activities from computer science, with female, Black, or Hispanic respondents even less likely to do so. Perceptions of who does computer science were narrow and stereotypical (White, male, smart), but there was high value and demand for computer science across all populations, particularly among parents. 
+Results indicate discrepancies in access to technology and computer science. Over 75% of principals reported their school did not offer computer science with programming/coding, but Hispanic students reported lower exposure to computers at home and in school and Black students and lower income students reported less access to computer science learning in school. 
+Hispanic students and female students were also less likely to have learned computer science or have confidence to learn computer science compared to their counterparts. 
+Finally, we explored barriers to access and identified a harsh disconnect: parent and student demand for computer science education was high while administrators' perceptions of this demand was low. 
+Additionally, the most common barriers to offering computer science cited by principals and superintendents were the need to dedicate time to other courses and testing requirements and the lack of qualified teachers, with technology less common of a barrier.}, 
+booktitle = {Proceedings of the 47th ACM Technical Symposium on Computing Science Education}, 
+pages = {645–650}, 
+numpages = {6}, 
+keywords = {knowledge, income., perceptions, underrepresented minorities, superintendents, diversity, pre-university, principals, parents, barriers, access, hispanic, teachers, black, latino/a, k-12, middle school, african american, pre-college, high school}, 
+location = {Memphis, Tennessee, USA}, 
+series = {SIGCSE '16} }
+
+%%%%%%%%%%%%%%  Articles published in 2017  %%%%%%%%%%%%%%
+
+@article{Passey17:compulsory,
+	author = {Passey, Don},
+	year = {2017},
+	month = {03},
+	pages = {},
+	title = {Computer science (CS) in the compulsory education curriculum: Implications for future research},
+	url = {https://link.springer.com/article/10.1007/s10639-016-9475-z},
+	volume = {22},
+	journal = {Education and Information Technologies},
+	doi = {10.1007/s10639-016-9475-z}
+}
+
 %%%%%%%%%%%%%%  Articles published in 2018  %%%%%%%%%%%%%%
+
+@book{FFFK18:HtDP,
+  title={How to design programs: an introduction to programming and computing},
+  author={Felleisen, Matthias and Findler, Robert Bruce and Flatt, Matthew and Krishnamurthi, Shriram},
+  year={2018},
+  publisher={MIT Press}
+}
 
 @inproceedings{NA18:PythonC++,
 author = {Alzahrani, Nabeel and Vahid, Frank and Edgcomb, Alex and Nguyen, Kevin and Lysecky, Roman},
@@ -760,6 +904,45 @@ numpages = {16},
 keywords = {Introductory programming, controlled experiment, CS1, C, Python}
 }
 
+%%%%%%%%%%%%%%  Articles published in 2019  %%%%%%%%%%%%%%
+
+@article{10.5555/3306465.3306473,
+author = {McManus, John W. and Costello, Philip J.},
+title = {Project Based Learning in Computer Science: A Student and Research Advisor's Perspective},
+year = {2019},
+issue_date = {January 2019},
+publisher = {Consortium for Computing Sciences in Colleges},
+address = {Evansville, IN, USA},
+volume = {34},
+number = {3},
+issn = {1937-4771},
+abstract = {The dominant pedagogy for Computer Science education often focuses on teaching isolated skills across a set of core courses. Recently the community has adopted Senior Capstone Projects and Project Based Learning to provide a cumulating experience designed to include a clear focus on: critical thinking and problem solving; collaboration and leadership; verbal and written communications; and independent work. This paper discusses the application of project-based learning to Computer Science education, providing a student's perspective and a research advisor's perspective. An example of applying Project Based Learning is presented and the effectiveness and relevance of Project Based Learning for Computer Science education is discussed.},
+journal = {J. Comput. Sci. Coll.},
+month = {jan},
+pages = {38–46},
+numpages = {9}
+}
+
+%%%%%%%%%%%%%%  Articles published in 2020  %%%%%%%%%%%%%%
+
+@inproceedings{10.1145/3328778.3366834,
+author = {Valstar, Sander and Krause-Levy, Sophia and Macedo, Alexandra and Griswold, William G. and Porter, Leo},
+title = {Faculty Views on the Goals of an Undergraduate CS Education and the Academia-Industry Gap},
+year = {2020},
+isbn = {9781450367936},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3328778.3366834},
+doi = {10.1145/3328778.3366834},
+abstract = {Previous work has found that recent computer science graduates often experience difficulty transitioning into their new roles in industry due to a significant gap between their academic experiences and industry's expectations. Although multiple studies have identified the views of students and members of industry on the value of a CS degree as preparation for industry, the faculty perspective on this topic remains unclear. Understanding these views could shed light on why the academia-industry gap has persisted despite the attention. This study identified faculty views on the goals of an undergraduate education and a CS major, focusing on preparation for careers in industry. In order to identify a spectrum of faculty views, we interviewed 14 faculty from a variety of backgrounds across three institutions. A phenomenographic analysis of the transcripts reveals that many faculty believe that industry preparation is an important programmatic goal, yet they encounter significant resource obstacles to achieving that goal.},
+booktitle = {Proceedings of the 51st ACM Technical Symposium on Computer Science Education},
+pages = {577–583},
+numpages = {7},
+keywords = {computer science education, academia-industry gap, phenomenography, faculty views},
+location = {Portland, OR, USA},
+series = {SIGCSE '20}
+}
+
 %%%%%%%%%%%%%%  Articles published in 2021  %%%%%%%%%%%%%%
 
 @article{FD21:lowlevel,
@@ -777,3 +960,50 @@ keywords = {Introductory programming, controlled experiment, CS1, C, Python}
 	year = {2021},
 	pages = {479--493}
 }
+
+@inproceedings{Fisler2021,
+  author = {Fisler, Kathi and Schanzer, Emmanuel and Weimar, Steve and 
+            Fetter, Annie and Renninger, K. Ann and 
+            Krishnamurthi, Shriram and Politz, Joe Gibbs and 
+            Lerner, Benjamin and Poole, Jennifer and Koerner, Christine},
+  title = {Evolving a K-12 Curriculum for Integrating Computer
+  Science into Mathematics},
+  year = {2021},
+  isbn = {9781450380621},
+  publisher = {Association for Computing Machinery},
+  address = {New York, NY, USA},
+  doi = {doi:10.1145/3408877.3432546},
+  booktitle = {Proceedings of the 52nd ACM Technical Symposium on
+  Computer Science Education},
+  pages = {59–65},
+}
+
+@inproceedings{10.1145/3505711.3505728,
+author = {Thi Van Pham, Anh and Huu Tran, Thien},
+title = {The Implementation of Project-Based Learning Approach in Technical Courses: An Investigation into Students’ Perceptions},
+year = {2021},
+isbn = {9781450390699},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3505711.3505728},
+doi = {10.1145/3505711.3505728},
+abstract = {Project-based learning is widely regarded as a viable strategy for enhancing student learning in higher education. Project-based learning effectively bridges the theoretical and practical education gaps by encouraging true knowledge, initiative, and a greater comprehension of the subject. This study was conducted to explore students’ perceptions towards the implementation of project-based learning in technical courses in a college in Vietnam where this method has been employed for several years. Data were collected from 98 students majoring in website design and software engineering courses. The questionnaire was developed in Google Form, and the link was sent to the participants via their email addresses. The results show that most of the students have positive perceptions of project-based learning approach. Students indicated that they gained confidence, enhanced their critical thinking and problem-solving abilities in computing disciplines, and enhanced their ability to communicate, engage, and work with team members, contributing to the overall quality of education.},
+booktitle = {2021 The 5th International Conference on Advances in Artificial Intelligence (ICAAI)},
+pages = {124–129},
+numpages = {6},
+keywords = {Technical courses, Project-based learning, Students’ perception},
+location = {Virtual Event, United Kingdom},
+series = {ICAAI 2021}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% WEB SITES AND ANYTHING ELSE KIND OF DATE-AMBIGUOUS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Suggested at https://tex.stackexchange.com/questions/621270/how-to-cite-a-website
+%  But, upon reading, it just points to SICP... also, it's a blog without author on this page, sigh.
+%  ALSO also, the most interesting part in pointing out SICP, which is actually a capture from a ycombinator discussion among many people
+% misc{Blog:WishfulThinking,
+%  author = {{**** Dave needs to check ... certainly not Gabor ****}},
+%  year = {n.d.},
+%  title = {wiki.c2.com/?WishfulThinking},
+%  note = {Accessed ******.  \url{wiki.c2.com/?WishfulThinking}}
+% }
