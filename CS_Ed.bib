@@ -285,7 +285,7 @@ numpages = {13}
 }
 
 % TAG: CS_ED K-12
-@article{article,
+@article{ASP:PBL_2,
 author = {Frank, Moti and Lavy, Ilana and Elata, David},
 year = {2003},
 month = {10},
@@ -760,6 +760,24 @@ pages = {8–9},
 numpages = {2}
 }
 
+@inproceedings{ASP_Types_1,
+author = {Endrikat, Stefan and Hanenberg, Stefan and Robbes, Romain and Stefik, Andreas},
+title = {How Do API Documentation and Static Typing Affect API Usability?},
+year = {2014},
+isbn = {9781450327565},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2568225.2568299},
+doi = {10.1145/2568225.2568299},
+abstract = {When developers use Application Programming Interfaces (APIs), they often rely on documentation to assist their tasks. In previous studies, we reported evidence indicating that static type systems acted as a form of implicit documentation, benefiting developer productivity. Such implicit documentation is easier to maintain, given it is enforced by the compiler, but previous experiments tested users without any explicit documentation. In this paper, we report on a controlled experiment and an exploratory study comparing the impact of using documentation and a static or dynamic type system on a development task. Results of our study both confirm previous findings and show that the benefits of static typing are strengthened with explicit documentation, but that this was not as strongly felt with dynamically typed languages.},
+booktitle = {Proceedings of the 36th International Conference on Software Engineering},
+pages = {632–642},
+numpages = {11},
+keywords = {API Usability, Documentation, Static Type Systems},
+location = {Hyderabad, India},
+series = {ICSE 2014}
+}
+
 %%%%%%%%%%%%%%  Articles published in 2015  %%%%%%%%%%%%%%
 
 @article{X15,
@@ -780,6 +798,46 @@ articleno = {13},
 numpages = {21},
 keywords = {class, conceptions, object, Object-oriented programming, teaching/learning programming, misconceptions}
 }
+
+@inproceedings{10.1145/2816707.2816720,
+author = {Fischer, Lars and Hanenberg, Stefan},
+title = {An Empirical Investigation of the Effects of Type Systems and Code Completion on API Usability Using TypeScript and JavaScript in MS Visual Studio},
+year = {2015},
+isbn = {9781450336901},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2816707.2816720},
+doi = {10.1145/2816707.2816720},
+abstract = {Recent empirical studies that compared static and dynamic type systems on API usability showed a positive impact of static type systems on developer productivity in most cases. Nevertheless, it is unclear how large this effect is in comparison to other factors. One obvious factor in programming is tooling: It is commonly accepted that modern IDEs have a large positive impact on developers, although it is not clear which parts of modern IDEs are responsible for that. One possible---and for most developers obvious candidate---is code completion. This paper describes a 2x2 randomized trial that compares JavaScript and Microsoft's statically typed alternative TypeScript with and without code completion in MS Visual Studio. While the experiment shows (in correspondence to previous experiments) a large positive effect of the statically typed language TypeScript, the code completion effect is not only marginal, but also just approaching statistical significance. This seems to be an indicator that the effect of static type systems is larger than often assumed, at least in comparison to code completion.},
+booktitle = {Proceedings of the 11th Symposium on Dynamic Languages},
+pages = {154–167},
+numpages = {14},
+keywords = {type systems, programming languages, empirical research, code completion},
+location = {Pittsburgh, PA, USA},
+series = {DLS 2015}
+}
+
+@article{ASP_Types_2,
+author = {Fischer, Lars and Hanenberg, Stefan},
+title = {An Empirical Investigation of the Effects of Type Systems and Code Completion on API Usability Using TypeScript and JavaScript in MS Visual Studio},
+year = {2015},
+issue_date = {Feburary 2016},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {51},
+number = {2},
+issn = {0362-1340},
+url = {https://doi.org/10.1145/2936313.2816720},
+doi = {10.1145/2936313.2816720},
+abstract = {Recent empirical studies that compared static and dynamic type systems on API usability showed a positive impact of static type systems on developer productivity in most cases. Nevertheless, it is unclear how large this effect is in comparison to other factors. One obvious factor in programming is tooling: It is commonly accepted that modern IDEs have a large positive impact on developers, although it is not clear which parts of modern IDEs are responsible for that. One possible---and for most developers obvious candidate---is code completion. This paper describes a 2x2 randomized trial that compares JavaScript and Microsoft's statically typed alternative TypeScript with and without code completion in MS Visual Studio. While the experiment shows (in correspondence to previous experiments) a large positive effect of the statically typed language TypeScript, the code completion effect is not only marginal, but also just approaching statistical significance. This seems to be an indicator that the effect of static type systems is larger than often assumed, at least in comparison to code completion.},
+journal = {SIGPLAN Not.},
+month = {oct},
+pages = {154–167},
+numpages = {14},
+keywords = {empirical research, programming languages, type systems, code completion}
+}
+
+
 
 
 %%%%%%%%%%%%%%  Articles published in 2016  %%%%%%%%%%%%%%
@@ -834,6 +892,24 @@ series = {SIGCSE '16} }
 	volume = {22},
 	journal = {Education and Information Technologies},
 	doi = {10.1007/s10639-016-9475-z}
+}
+
+@inproceedings{ASP_Errors,
+author = {Wrenn, John and Krishnamurthi, Shriram},
+title = {Error Messages Are Classifiers: A Process to Design and Evaluate Error Messages},
+year = {2017},
+isbn = {9781450355308},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3133850.3133862},
+doi = {10.1145/3133850.3133862},
+abstract = {This paper presents a lightweight process to guide error report authoring. We take the perspective that error reports are really classifiers of program information. They should therefore be subjected to the same measures as other classifiers (e.g., precision and recall). We formalize this perspective as a process for assessing error reports, describe our application of this process to an actual programming language, and present a preliminary study on the utility of the resulting error reports.},
+booktitle = {Proceedings of the 2017 ACM SIGPLAN International Symposium on New Ideas, New Paradigms, and Reflections on Programming and Software},
+pages = {134–147},
+numpages = {14},
+keywords = {Pyret, highlighting, classifiers, precision and recall, error messages},
+location = {Vancouver, BC, Canada},
+series = {Onward! 2017}
 }
 
 %%%%%%%%%%%%%%  Articles published in 2018  %%%%%%%%%%%%%%
@@ -971,6 +1047,24 @@ location = {Portland, OR, USA},
 series = {SIGCSE '20}
 }
 
+@inproceedings{ASP_Tests,
+author = {Wrenn, John and Krishnamurthi, Shriram},
+title = {Will Students Write Tests Early Without Coercion?✱},
+year = {2020},
+isbn = {9781450389211},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3428029.3428060},
+doi = {10.1145/3428029.3428060},
+abstract = {Students faced with a programming task often begin their implementation without a sufficient understanding of the problem. Several prior papers suggest that formulating input–output examples before beginning one’s implementation is the key to averting problem misunderstandings, but that students are loath to actually do it. Is outright coercion instructors’ only hope to convince students to follow this methodology and hence help themselves? We conjecture that students’ reluctance may stem from the disaffordances of their programming environments. In this work, we augment the student’s programming environment to encourage examples-first development, and design a novel measure to assess students’ adherence to this methodology. We apply these measures to students using our modified environment in a semester-long course, and find high voluntary adherence, especially relative to the literature’s low expectations.},
+booktitle = {Koli Calling '20: Proceedings of the 20th Koli Calling International Conference on Computing Education Research},
+articleno = {27},
+numpages = {5},
+keywords = {testing, examples-first, Pyret, self-regulation, CS1, Examplar},
+location = {Koli, Finland},
+series = {Koli Calling '20}
+}
+
 %%%%%%%%%%%%%%  Articles published in 2021  %%%%%%%%%%%%%%
 
 @article{FD21:lowlevel,
@@ -1025,7 +1119,7 @@ series = {ICAAI 2021}
 }
 
 %%%%%%%%%%%%%%  Articles published in 2022  %%%%%%%%%%%%%%
-@article{article,
+@article{ASP:PBL_1,
 author = {Malik, Khalid and Zhu, Meina},
 year = {2022},
 month = {09},
@@ -1047,6 +1141,16 @@ doi = {10.1007/s10639-022-11350-8}
  @misc{editor_2020, title={The good and the bad of Java Programming},
  url={https://www.altexsoft.com/blog/engineering/pros-and-cons-of-java-programming/}, 
  journal={AltexSoft}, publisher={AltexSoft}, author={Editor}, year={2020}, month={Feb}} 
+
+%%%%%%%%%%%%%%  Websites published in 2021  %%%%%%%%%%%%%%
+ @misc{crew_2021, 
+ title={The pyret code; or a rationale for the PYRET programming language}, 
+ url={https://www.pyret.org/pyret-code/}, journal={Pyret}, 
+ author={Crew, The Pyret}, year={2021}} 
+ 
+  @misc{programming language_2021, title={Programming Languages and learning}, url={https://quorumlanguage.com/evidence.html}, 
+  journal={Programming Languages and Learning - Quorum Programming Language}, 
+  author={Programming Language, The Quorum}, year={2021}} 
 
 %%%%%%%%%%%%%%  Websites published in 2022  %%%%%%%%%%%%%%
  @misc{advocacy coalition_2022, 
