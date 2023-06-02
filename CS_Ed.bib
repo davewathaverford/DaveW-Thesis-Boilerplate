@@ -236,6 +236,23 @@ series = {Assets '00}
 
 %%%%%%%%%%%%%%  Articles published in 2001  %%%%%%%%%%%%%%
 
+
+% @inproceedings{10.5555/645395.651947,
+@inproceedings{CFF01-stepper,
+author = {Clements, John and Flatt, Matthew and Felleisen, Matthias},
+title = {Modeling an Algebraic Stepper},
+year = {2001},
+isbn = {3540418628},
+publisher = {Springer-Verlag},
+address = {Berlin, Heidelberg},
+abstract = {Programmers rely on the correctness of the tools in their programming environments. In the past, semanticists have studied the correctness of compilers and compiler analyses, which are the most important tools. In this paper, we make the case that other tools, such as debuggers and steppers, deserve semantic models, too, and that using these models can help in developing these tools.Our concrete starting point is the algebraic stepper in DrScheme, our Scheme programming environment. The algebraic stepper explains a Scheme computation in terms of an algebraic rewriting of the program text. A program is rewritten until it is in a canonical form (if it has one). The canonical form is the final result.The stepper operates within the existing evaluator, by placing breakpoints and by reconstructing source expressions from source information placed on the stack. This approach raises two questions. First, do the run-time breakpoints correspond to the steps of the reduction semantics? Second, does the debugging mechanism insert enough information to reconstruct source expressions?To answer these questions, we develop a high-level semantic model of the extended compiler and run-time machinery. Rather than modeling the evaluation as a low-level machine, we model the relevant low-level features of the stepper's implementation in a high-level reduction semantics. We expect the approach to apply to other semantics-based tools.},
+booktitle = {Proceedings of the 10th European Symposium on Programming Languages and Systems},
+pages = {320–334},
+numpages = {15},
+series = {ESOP '01}
+}
+
+
 % TAG: Recursion
 @inproceedings{SR:PR,
 author = {Sooriamurthi, Raja},
@@ -1307,6 +1324,25 @@ numpages = {9}
 
 
 %%%%%%%%%%%%%%  Articles published in 2020  %%%%%%%%%%%%%%
+
+% @inproceedings{10.1145/3437800.3439202,
+@inproceedings{all20-notional,
+author = {Fincher, Sally and Jeuring, Johan and Miller, Craig S. and Donaldson, Peter and du Boulay, Benedict and Hauswirth, Matthias and Hellas, Arto and Hermans, Felienne and Lewis, Colleen and M\"{u}hling, Andreas and Pearce, Janice L. and Petersen, Andrew},
+title = {Notional Machines in Computing Education: The Education of Attention},
+year = {2020},
+isbn = {9781450382939},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3437800.3439202},
+doi = {10.1145/3437800.3439202},
+abstract = {This report defines notional machines (NMs), and provides a series of definitional characteristics by which they may be identified. Over several sections, it includes a first-hand report of the origin of NMs, reports a systematic literature review to track the use and development of the concept, and presents a small collection of examples collected through interviews with experienced teachers. Additionally, the report presents NMs in a common format, and makes some preliminary explorations of their use in practice, including examples of instructors using multiple NMs in sequence. Approach and method are fully detailed in evidential appendices, to support replication of results and adoption/adaptation of practice.},
+booktitle = {Proceedings of the Working Group Reports on Innovation and Technology in Computer Science Education},
+pages = {21–50},
+numpages = {30},
+keywords = {computing education, notional machines},
+location = {Trondheim, Norway},
+series = {ITiCSE-WGR '20}
+}
 
 @inproceedings{10.1145/3328778.3366834,
 author = {Valstar, Sander and Krause-Levy, Sophia and Macedo, Alexandra and Griswold, William G. and Porter, Leo},
