@@ -14,11 +14,15 @@
 %%%%%%%%    Unless you're editing directly on github.com, remember to pull first!                    %%%%%%%%
 %%%%%%%%    (changes should show up within 2 min. if you "refresh" the imported file in overleaf)    %%%%%%%%
 %%%%%%%%                                                                                             %%%%%%%%
-%%%%%%%%    When adding to the bibliography, please keep things sorted by year.                      %%%%%%%%
+%%%%%%%%    When adding to the bibliography:                                                         %%%%%%%%
+%%%%%%%%      * please keep things sorted by year                                                    %%%%%%%%
+%%%%%%%%        + Web sites, etc., should go at the end                                              %%%%%%%%
+%%%%%%%%      * please use labels structured author(s) year ":" topic/idea/title, e.g.:              %%%%%%%%
+%%%%%%%%        + 1-author papers, e.g. DuBoulay:Notional81                                          %%%%%%%%
+%%%%%%%%        + many-author papers, e.g., CFF01:stepper, FFFK18:HtDP                               %%%%%%%%
+%%%%%%%%        (note: if I have to edit these, I'll keep the old label as a comment, e.g. DuBoulay) %%%%%%%%
 %%%%%%%%                                                                                             %%%%%%%%
-%%%%%%%%    Web sites, etc., should go at the end                                                    %%%%%%%%
-%%%%%%%%                                                                                             %%%%%%%%
-%%%%%%%%    Last edit: 2023-06-02 18:29 Eastern Time                                                 %%%%%%%%
+%%%%%%%%    Last edit: 2024-07-11                                                                    %%%%%%%%
 %%%%%%%%                                                                                             %%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -30,7 +34,8 @@
 %%%%%%%%%%%%%%  Articles published in 1981  %%%%%%%%%%%%%%
 
 % TAG: NotionalMachine
-@article{DuBoulay:Notional81,
+%%% WAS: @article{DuBoulay:Notional81,
+@article{DOM81:Notional,
 title = {The black box inside the glass box: presenting computing concepts to novices},
 journal = {International Journal of Man-Machine Studies},
 volume = {14},
@@ -876,7 +881,27 @@ series = {ICER '11}
 %%%%%%%%%%%%%%  Articles published in 2013  %%%%%%%%%%%%%%
 
 
-@article{JS13:N,
+% ACM version: @inproceedings{10.1145/2445196.2445368,
+@inproceedings{Guo13:PythonTutor,
+author = {Guo, Philip J.},
+title = {Online python tutor: embeddable web-based program visualization for cs education},
+year = {2013},
+isbn = {9781450318686},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2445196.2445368},
+doi = {10.1145/2445196.2445368},
+abstract = {This paper presents Online Python Tutor, a web-based program visualization tool for Python, which is becoming a popular language for teaching introductory CS courses. Using this tool, teachers and students can write Python programs directly in the web browser (without installing any plugins), step forwards and backwards through execution to view the run-time state of data structures, and share their program visualizations on the web. In the past three years, over 200,000 people have used Online Python Tutor to visualize their programs. In addition, instructors in a dozen universities such as UC Berkeley, MIT, the University of Washington, and the University of Waterloo have used it in their CS1 courses. Finally, Online Python Tutor visualizations have been embedded within three web-based digital Python textbook projects, which collectively attract around 16,000 viewers per month and are being used in at least 25 universities. Online Python Tutor is free and open source software, available at pythontutor.com.},
+booktitle = {Proceeding of the 44th ACM Technical Symposium on Computer Science Education},
+pages = {579–584},
+numpages = {6},
+keywords = {CS1, program visualization, python},
+location = {Denver, Colorado, USA},
+series = {SIGCSE '13}
+}
+
+%% WAS: @article{JS13:N,
+@article{Sorva13:Notional,
 author = {Sorva, Juha},
 title = {Notional Machines and Introductory Programming Education},
 year = {2013},
@@ -907,6 +932,7 @@ articleno = {8},
 numpages = {31},
 keywords = {Notional machine, misconceptions, constructivism, phenomenography, literature review, introductory programming education, CS1, threshold concepts, mental models}
 }
+
 
 %%%%%%%%%%%%%%  Articles published in 2014  %%%%%%%%%%%%%%
 
@@ -1504,46 +1530,47 @@ numpages = {9}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% WEB SITES AND ANYTHING ELSE KIND OF DATE-AMBIGUOUS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %%%%%%%%%%%%%%  Websites published in 2019  %%%%%%%%%%%%%%
- @misc{ASP_C, title={Advantages and disadvantages of C programming - discover the secrets of C}, 
- url={https://data-flair.training/blogs/advantages-and-disadvantages-of-c/}, journal={DataFlair}, 
- author={Team, DataFlair}, year={2019}, month={Jul}} 
+@misc{ASP_C, title={Advantages and disadvantages of C programming - discover the secrets of C}, 
+url={https://data-flair.training/blogs/advantages-and-disadvantages-of-c/}, journal={DataFlair}, 
+author={Team, DataFlair}, year={2019}, month={Jul}} 
 
 %%%%%%%%%%%%%%  Websites published in 2020  %%%%%%%%%%%%%%
- @misc{ASP_Java, title={The good and the bad of Java Programming},
- url={https://www.altexsoft.com/blog/engineering/pros-and-cons-of-java-programming/}, 
- journal={AltexSoft}, publisher={AltexSoft}, author={Editor}, year={2020}, month={Feb}} 
+@misc{ASP_Java, title={The good and the bad of Java Programming},
+url={https://www.altexsoft.com/blog/engineering/pros-and-cons-of-java-programming/}, 
+journal={AltexSoft}, publisher={AltexSoft}, author={Editor}, year={2020}, month={Feb}} 
 
 %%%%%%%%%%%%%%  Websites published in 2021  %%%%%%%%%%%%%%
- @misc{ASP_Pyretdoc, 
- title={The pyret code; or a rationale for the PYRET programming language}, 
- url={https://www.pyret.org/pyret-code/}, journal={Pyret}, 
- author={Crew, The Pyret}, year={2021}} 
+@misc{ASP_Pyretdoc, 
+title={The pyret code; or a rationale for the PYRET programming language}, 
+url={https://www.pyret.org/pyret-code/}, journal={Pyret}, 
+author={Crew, The Pyret}, year={2021}} 
  
-  @misc{ASP:Quorum, title={Programming Languages and learning}, url={https://quorumlanguage.com/evidence.html}, 
-  journal={Programming Languages and Learning - Quorum Programming Language}, 
-  author={Programming Language, The Quorum}, year={2021}} 
+@misc{ASP:Quorum, title={Programming Languages and learning}, url={https://quorumlanguage.com/evidence.html}, 
+journal={Programming Languages and Learning - Quorum Programming Language}, 
+author={Programming Language, The Quorum}, year={2021}} 
 
 %%%%%%%%%%%%%%  Websites published in 2022  %%%%%%%%%%%%%%
- @misc{ASP_Code_data, 
- title={2022 state of CS Report}, 
- url={https://advocacy.code.org/stateofcs}, 
- journal={Code.org}, 
- author={Advocacy Coalition, Code.org}, 
- year={2022}}
+@misc{ASP_Code_data, 
+title={2022 state of CS Report}, 
+url={https://advocacy.code.org/stateofcs}, 
+journal={Code.org}, 
+author={Advocacy Coalition, Code.org}, 
+year={2022}}
  
-  @misc{ASP_Python, 
-  title={12 Pros and Cons of Python that you must be aware of!}, 
-  url={https://medium.com/@saadbenaicha/python-12-advantages-and-disadvantages-41bc407cf965}, 
-  journal={Medium}, publisher={Medium}, author={Benaicha, Saad}, year={2022}, month={Mar}} 
-  
-  @misc{ASP_PBL_4_Codelicious, 
-  title={Project-Based Learning Framework and examples}, 
-  url={https://www.codelicious.com/blog/project-based-learning-computer-science-curriculum}, 
-  journal={Codelicious}, publisher={Codelicious}, author={Baird, Katie}, year={2022}, month={Jul}} 
+@misc{ASP_Python, 
+title={12 Pros and Cons of Python that you must be aware of!}, 
+url={https://medium.com/@saadbenaicha/python-12-advantages-and-disadvantages-41bc407cf965}, 
+journal={Medium}, publisher={Medium}, author={Benaicha, Saad}, year={2022}, month={Mar}} 
 
- @misc{ASP_Typing_Mozilla, title={Static typing - MDN web docs glossary: definitions of web-related terms: MDN}, 
- url={https://developer.mozilla.org/en-US/docs/Glossary/Static_typing}, journal={MDN Web Docs Glossary: Definitions of Web-related terms | MDN}, 
- author={contributors, MDN}, year={2022}} 
+@misc{ASP_PBL_4_Codelicious, 
+title={Project-Based Learning Framework and examples}, 
+url={https://www.codelicious.com/blog/project-based-learning-computer-science-curriculum}, 
+journal={Codelicious}, publisher={Codelicious}, author={Baird, Katie}, year={2022}, month={Jul}} 
+
+@misc{ASP_Typing_Mozilla, title={Static typing - MDN web docs glossary: definitions of web-related terms: MDN}, 
+url={https://developer.mozilla.org/en-US/docs/Glossary/Static_typing}, journal={MDN Web Docs Glossary: Definitions of Web-related terms | MDN}, 
+author={contributors, MDN}, year={2022}} 
+
 
 % Suggested at https://tex.stackexchange.com/questions/621270/how-to-cite-a-website
 %  But, upon reading, it just points to SICP... also, it's a blog without author on this page, sigh.
