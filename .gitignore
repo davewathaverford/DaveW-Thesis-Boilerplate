@@ -1,4 +1,7 @@
+*.bbl
+*.blg
 *.aux
 *.log
 local
 tmp
+main_davew_simple.pdf
