@@ -24,7 +24,7 @@
 %%%%%%%%             standard structure makes it easy to type the citation in overleaf.com           %%%%%%%%
 %%%%%%%%             if I have to edit these, I'll keep the old label as a comment, e.g. DuBoulay    %%%%%%%%
 %%%%%%%%                                                                                             %%%%%%%%
-%%%%%%%%    Last edits: 1510 2024-09-08 Eastern Time                                                 %%%%%%%%
+%%%%%%%%    Last edits: 1130 2024-09-09 Eastern Time                                                 %%%%%%%%
 %%%%%%%%                                                                                             %%%%%%%%
 %%%%%%%%    TODO: generate "anonymized" version of this file automatically, somehow                  %%%%%%%%
 %%%%%%%%                                                                                             %%%%%%%%
@@ -783,6 +783,11 @@ series = {ICER '06}
 
 %%%%%%%%%%%%%%  Articles published in 2007  %%%%%%%%%%%%%%
 
+%
+% 2007 ACM "Discrete Math" report, cited in Neff, is far below on web-sites, DiscreteMathReport07_archive_org
+% ... but, also, here:
+% http://web.archive.org/web/20091128061308/http://www.sigcse.org/resources/discrete-mathematics/DiscreteMathReport.pdf
+
 @article{Sigman07:EngagingTheory,
     author  = "Scott Sigman",
     title   = "Engaging Students in Formal Language Theory and Theory of Computation",
@@ -921,6 +926,24 @@ keywords = {curriculum, intro. to programming, python, cs1, cs2}
     pages   = "48--52"
 }
 
+@inproceedings{Neff10:Discrete,
+author = {Neff, Norman},
+title = {Problem-directed discrete structures course},
+year = {2010},
+isbn = {9781450300063},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1734263.1734315},
+doi = {10.1145/1734263.1734315},
+abstract = {The "2007 SIGCSE Report On the Implementation of a Discrete Mathematics Course" recommends relocating some discrete structures topic areas to other courses, for the sake of coherency. Our implementation of the one semester course also relocates topics, but additionally features a focus on a significant computer science problem: regular language acceptors. This problem-directed course model promises superior coherency, motivation, and integration with computing.},
+booktitle = {Proceedings of the 41st ACM Technical Symposium on Computer Science Education},
+pages = {148–151},
+numpages = {4},
+keywords = {cc2001, computing curriculum, course models, discrete mathematics, discrete structures},
+location = {Milwaukee, Wisconsin, USA},
+series = {SIGCSE '10}
+}
+
 @inproceedings{RE10:PythonNon,
 author = {Enbody, Richard J. and Punch, William F.},
 title = {Performance of Python CS1 Students in Mid-Level Non-Python CS Courses},
@@ -1032,6 +1055,24 @@ booktitle = {Proceedings of the 42nd ACM Technical Symposium on Computer Science
 pages = {571–576},
 numpages = {6},
 keywords = {auditory debugging, assistive technology, visual impairments, accessibility},
+location = {Dallas, TX, USA},
+series = {SIGCSE '11}
+}
+
+@inproceedings{PWB11:Discrete,
+author = {Power, James F. and Whelan, Thomas and Bergin, Susan},
+title = {Teaching discrete structures: a systematic review of the literature},
+year = {2011},
+isbn = {9781450305006},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/1953163.1953247},
+doi = {10.1145/1953163.1953247},
+abstract = {This survey paper reviews a large sample of publications on the teaching of discrete structures and discrete mathematics in computer science curricula. The approach is systematic, in that a structured search of electronic resources has been conducted, and the results are presented and quantitatively analyzed. A number of broad themes in discrete structures education are identified relating to course content, teaching strategies and the means of evaluating the success of a course.},
+booktitle = {Proceedings of the 42nd ACM Technical Symposium on Computer Science Education},
+pages = {275–280},
+numpages = {6},
+keywords = {discrete structures, discrete mathematics, computing curriculum},
 location = {Dallas, TX, USA},
 series = {SIGCSE '11}
 }
@@ -1915,6 +1956,24 @@ publisher = {Association for Computing Machinery},
 address = {New York, NY, USA}
 }
 
+@inproceedings{KR24:ACM_curricula,
+author = {Kumar, Amruth N. and Raj, Rajendra K.},
+title = {Computer Science Curricula 2023 (CS2023): The Final Report},
+year = {2024},
+isbn = {9798400704246},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3626253.3633405},
+doi = {10.1145/3626253.3633405},
+abstract = {A joint task force of the ACM, IEEE-Computer Society, and AAAI has updated the computer science curricular guidelines last published in 2013. Included in the updated guidelines, referred to as CS2023, is a revised knowledge model and a new framework for building a customized competency model of the computer science curriculum. Acknowledging that one size does not fit all, the guidelines provide flexibility for computer science programs to structure their curriculum around the competency area(s) they wish to target. Given the pervasiveness of computing in everyday life, the guidelines emphasize the importance of society, ethics, and issues of the computing profession throughout the curriculum. The role of mathematics has been expanded in the guidelines, particularly in response to the latest developments in artificial intelligence. The curricular guidelines will be accompanied by articles written by experts on curricular issues such as ethics, computing for the social good, and accessibility. In the special session, the CS2023 curricular guidelines will be presented, and feedback solicited on facilitating their adoption and adaptation. The session is aimed at computer science educators, administrators, and professionals interested in computer science education.},
+booktitle = {Proceedings of the 55th ACM Technical Symposium on Computer Science Education V. 2},
+pages = {1867–1868},
+numpages = {2},
+keywords = {competency model, computer science curricula, computer science education, curricular guidelines, curricular practices, knowledge model, model curricula},
+location = {Portland, OR, USA},
+series = {SIGCSE 2024}
+}
+
 % see https://tex.stackexchange.com/questions/135082/referencing-a-bachelors-thesis
 % Note ACM has mastersthesis but not thesis...
 @mastersthesis{Hill24:Thesis,
@@ -1953,8 +2012,14 @@ note    = "Submitted to the 2025 ACM Technical Symposium on Computer Science Edu
   author={Emina Torlak}, 
   url={https://docs.racket-lang.org/rosette-guide/index.html}
 }
-  
- 
+
+
+% Found a reference to this in Neff's 2010 paper, but his URL gave me a 404 (Sept 2024), so, off to visit Mr. Peabody....
+@misc{MB07:DiscreteReport_archived, 
+  title={SIGCSE Committeee Report On the Implementation of a Discrete Mathematics Course},
+  editor={Marion, Bill and Baldwin, Doug}, 
+  url={http://web.archive.org/web/20091128061308/http://www.sigcse.org/resources/discrete-mathematics/DiscreteMathReport.pdf}
+}
 
 %%%%%%%%%%%%%%  Websites published in 2019  %%%%%%%%%%%%%%
 @misc{ASP_C, title={Advantages and disadvantages of C programming - discover the secrets of C}, 
