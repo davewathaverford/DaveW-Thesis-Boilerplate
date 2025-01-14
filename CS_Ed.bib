@@ -30,11 +30,19 @@
 %%%%%%%%                                                                                             %%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-
-
 %%  List of CS Education articles, sorted by year, and, within that, alphabetically by first author
 %%    Also, we could add comments like % TAG: ExperimentalDesign, and then search for them
 %% Tags include: ExperimentalDesign, NotionalMachine, Recursion, LowLevel, OOP, Accessibility
+
+% To use anonymous versions, edit only this file, and surrounding the regular version with these two lines:
+% TO ANONYMIZE DELETE FROM HERE...
+% ...TO HERE (TO ANOMYMIZE, THAT IS)
+%
+% and adding an anonymous version of our paper, with the suffux _ANONYMOUS_VERSION on the tag,
+%  for example @article{SW22:recursion_NOT_ANON,
+%
+% Then, run the script CS_Ed_anonymizer.sh to produce the file CS_Ed_anon.bib
+
 
 
 
@@ -438,6 +446,7 @@ numpages = {5}
     pages   = "57--59"
 }
 
+
 %%%%%%%%%%%%%%  Articles published in 2003  %%%%%%%%%%%%%%
 
 
@@ -668,6 +677,7 @@ keywords = {conceptions, phenomenography, misconceptions, variation theory}
 
 % Tag math; no use of terms -race, -minority
 % PREPRINT of Bergin and Reilly BR06:predicting
+% ToDo: need to add this??
 
 
 % inproceedings{10.1145/1140124.1140162,
@@ -1421,7 +1431,6 @@ series = {SIGITE '15}
 
 
 
-
 %%%%%%%%%%%%%%  Articles published in 2016  %%%%%%%%%%%%%%
 
 
@@ -1759,6 +1768,7 @@ numpages = {9}
 }
 
 % article{DBLP:journals/corr/abs-1907-04134,
+% TO ANONYMIZE DELETE FROM HERE...
 @article{WO19:bridge,
   author       = {David G. Wonnacott and
                   Peter{-}Michael Osera},
@@ -1773,6 +1783,13 @@ numpages = {9}
   timestamp    = {Wed, 17 Jul 2019 10:27:36 +0200},
   biburl       = {https://dblp.org/rec/journals/corr/abs-1907-04134.bib},
   bibsource    = {dblp computer science bibliography, https://dblp.org}
+}
+% ...TO HERE (TO ANOMYMIZE, THAT IS)
+@article{WO19:bridge_ANONYMOUS_VERSION,
+  author       = {Anonymized Author and Other Coauthor},
+  title        = {(anonymized title of tech report about pedagogy and tools)},
+  journal      = {CoRR},
+  eprinttype    = {arXiv}
 }
 
 
@@ -2017,6 +2034,7 @@ series = {ITiCSE '22}
 
 
 % see https://tex.stackexchange.com/questions/135082/referencing-a-bachelors-thesis
+% TO ANONYMIZE DELETE FROM HERE...
 @mastersthesis{Shukla22:Thesis,
 author={Gulesh Shukla},
 advisor={David G. Wonnacott},
@@ -2027,7 +2045,19 @@ department={computer science},
 year=2022,
 month={May}
 }
+% ...TO HERE (TO ANOMYMIZE, THAT IS)
+@mastersthesis{Shukla22:Thesis_ANONYMOUS_VERSION,
+author={Student (anonymized)},
+advisor={Advisor},
+title={Title},
+type={Bachelor's Thesis},
+school={(anonymized)},
+department={computer science},
+year=2022,
+month={May}
+}
 
+% TO ANONYMIZE DELETE FROM HERE...
 % article{10.5555/3580523.3580533,
 @article{SW22:recursion,
 author = {Shukla, Gulesh and Wonnacott, David G.},
@@ -2044,6 +2074,13 @@ journal = {J. Comput. Sci. Coll.},
 month = {nov},
 pages = {98–106},
 numpages = {9}
+}
+% ...TO HERE (TO ANOMYMIZE, THAT IS)
+@article{SW22:recursion_ANONYMIZED_VERSION,
+author = {Student (anonymized) and Advisor},
+title = {Work on teaching recursion, rather preliminary},
+year = {2022},
+journal = {Proceedings of a small regional meeting}
 }
 
 
@@ -2111,9 +2148,11 @@ numpages = {2}
 }
 
 %% ACM calls this 10.5555/3636988.3637021
+% TO ANONYMIZE DELETE FROM HERE...
+title = {\href{http://cs.haverford.edu/projects/N-Dolphin}{{N}-{D}olphin}: A Visualizer for Abstract Substitution-Based Execution},
 @article{RW23:NDolphin,
 author = {Reichard, Alex and Wonnacott, David G.},
-title = {\href{http://cs.haverford.edu/projects/N-Dolphin}{{N}-{D}olphin}: A Visualizer for Abstract Substitution-Based Execution},
+title = {{N}-{D}olphin}: A Visualizer for Abstract Substitution-Based Execution},
 year = {2023},
 issue_date = {October 2023},
 publisher = {Consortium for Computing Sciences in Colleges},
@@ -2126,6 +2165,13 @@ journal = {J. Comput. Sci. Coll.},
 month = {oct},
 pages = {267–276},
 numpages = {10}
+}
+% ...TO HERE (TO ANOMYMIZE, THAT IS)
+@article{RW23:NDolphin_ANONYMOUS_VERSION,
+author = {Recent Graduate (anonymized) and Faculty Advisor (anonymized)},
+title = {Anonymized, if that matters ... please don't web search},
+year = {2023},
+journal = {Proceedings of a small regional meeting}
 }
 
 
@@ -2146,7 +2192,6 @@ keywords = {Test-driven Development, Software Engineering, Maintainability, Gami
 location = {San Francisco, CA, USA},
 series = {Gamify 2023}
 }
-
 
 
 %%%%%%%%%%%%%%  Articles published in 2024  %%%%%%%%%%%%%%
@@ -2183,6 +2228,7 @@ series = {SIGCSE 2024}
 
 % see https://tex.stackexchange.com/questions/135082/referencing-a-bachelors-thesis
 % Note ACM has mastersthesis but not thesis...
+% TO ANONYMIZE DELETE FROM HERE...
 @mastersthesis{Hill24:Thesis,
 author={Jonathan Hill},
 advisor={David G. Wonnacott},
@@ -2193,12 +2239,16 @@ department={computer science},
 year=2024,
 month={May}
 }
-
-@unpublished{HRW24:refactoring,
-author  = "Hill, Jonathan and Reichard, Alex and Wonnacott, David G.",
-title   = "Refactoring Programming into Proving",
-year    = 2024,
-note    = "Submitted to the 2025 ACM Technical Symposium on Computer Science Education, currently awaiting response."
+% ...TO HERE (TO ANOMYMIZE, THAT IS)
+@mastersthesis{Hill24:Thesis_ANONYMOUS_VERSION,
+author={Student (anonymized)},
+advisor={Advisor (anonymized)},
+title={anonymized senior thesis title},
+type={Bachelor's Thesis},
+school={anonymized institution},
+department={computer science},
+year=2024,
+month={May}
 }
 
 
