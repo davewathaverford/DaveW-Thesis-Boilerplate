@@ -11,3 +11,4 @@ echo " " >> ${THIS}
 git commit -m "committing after auto-anonymizing" CS_Ed*.bib ${THIS}
 
 # There may be some blank lines after this, to make sure git commit has something to do, feel free to delete, sigh
+ 
