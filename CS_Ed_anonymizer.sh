@@ -4,13 +4,14 @@ echo " " >> ${THIS}
 wc CS_Ed*.bib
 git commit -m "committing before auto-anonymizing" CS_Ed*.bib ${THIS} && cat CS_Ed.bib | \
 	sed -e '/^% TO ANONYMIZE DELETE FROM HERE.../,/^% ...TO HERE (TO ANOMYMIZE, THAT IS)/d'    | \
-	sed -e 's/_ANONYMIZED_VERSION,/,/'                                                         | \
+	sed -e 's/_ANONYMOUS_VERSION,/,/'                                                         | \
 	cat > CS_Ed_anon.bib &&
 wc CS_Ed*.bib
 echo " " >> ${THIS}
 git commit -m "committing after auto-anonymizing" CS_Ed*.bib ${THIS}
 
 # There may be some blank lines after this, to make sure git commit has something to do, feel free to delete, sigh
+ 
  
  
  
