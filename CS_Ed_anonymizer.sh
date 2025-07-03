@@ -4,7 +4,7 @@ echo " " >> ${THIS}
 wc CS_Ed*.bib
 echo "%%  Auto-regenerating anonymous bibliography at `date`" > CS_Ed_anon.bib
 git commit -m "committing before auto-anonymizing" CS_Ed*.bib ${THIS} && cat CS_Ed.bib | \
-	sed -e '/^% TO ANONYMIZE DELETE FROM HERE.../,/^% ...TO HERE (TO ANOMYMIZE, THAT IS)/d'    | \
+	sed -e '/^% TO ANONYMIZE DELETE FROM HERE.../,/^% ...TO HERE (DELETE FROM THERE, TO ANOMYMIZE, THAT IS)/d'    | \
 	sed -e 's/_ANONYMOUS_VERSION,/,/'                                                         | \
 	cat >> CS_Ed_anon.bib &&
 wc CS_Ed*.bib
