@@ -24,7 +24,7 @@
 %%%%%%%%             standard structure makes it easy to type the citation in overleaf.com           %%%%%%%%
 %%%%%%%%             if I have to edit these, I'll keep the old label as a comment, e.g. DuBoulay    %%%%%%%%
 %%%%%%%%                                                                                             %%%%%%%%
-%%%%%%%%    Last edits: 2025-07-03                                                                   %%%%%%%%
+%%%%%%%%    Last edits: 2025-08-11 1350 EDT                                                          %%%%%%%%
 %%%%%%%%                                                                                             %%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -2246,7 +2246,7 @@ numpages = {2}
 
 %% ACM calls this 10.5555/3636988.3637021
 % TO ANONYMIZE DELETE FROM HERE...
-title = {\href{http://cs.haverford.edu/projects/N-Dolphin}{{N}-{D}olphin}: A Visualizer for Abstract Substitution-Based Execution},
+% title = {\href{http://cs.haverford.edu/projects/N-Dolphin}{{N}-{D}olphin}: A Visualizer for Abstract Substitution-Based Execution},
 @article{RW23:NDolphin,
 author = {Reichard, Alex and Wonnacott, David G.},
 title = {{{N}-{D}olphin}: A Visualizer for Abstract Substitution-Based Execution},
@@ -2257,6 +2257,7 @@ address = {Evansville, IN, USA},
 volume = {39},
 number = {3},
 issn = {1937-4771},
+URL = {http://cs.haverford.edu/projects/N-Dolphin},
 abstract = {This paper presents N-Dolphin, a notional-machine visualizer coded in Racket, designed to enhance the learning experience for novice programmers by offering an interactive representation of substitution-based execution of Python code.N-Dolphin aims to make advanced programming concepts more intuitive and accessible to students. The tool offers a variety of code traversal techniques and novel functionality to help a beginner build a solid foundation for abstract reasoning about code and computation. N-Dolphin provides both substitution-based execution and a "step-over" feature, which are not combined in any readily-available tool, despite each, individually, being valuable for teaching challenging topics like recursion. Furthermore, N-Dolphin provides additional symbolic substitution steps, to provide support for symbolic reasoning about code. Finally, it provides an intuitive user interface for students to interact with code and visualize its execution.Although N-Dolphin is written in Racket and supports substitution-based execution, it currently presents code in eclectic-but-legal Python.},
 journal = {J. Comput. Sci. Coll.},
 month = {oct},
@@ -2361,13 +2362,29 @@ month={May}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% WEB SITES AND ANYTHING ELSE KIND OF DATE-AMBIGUOUS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+@misc{Web_N_Dolphin,
+  title={N-Dolphin},
+  author={David G. Wonnacott},
+  url={http://cs.haverford.edu/projects/N-Dolphin}
+}
+
+@misc{Web_HERA,
+  title={HERA: The {H}averford {E}ducational {RISC} {A}rchitecture},
+  author={David G. Wonnacott},
+  url={http://cs.haverford.edu/projects/HERA}
+}
+
+@misc{Web_FVtE,
+  title={From Vision to Execution},
+  author={David G. Wonnacott},
+  url={http://cs.haverford.edu/people/davew/FVtE}
+}
+
 @misc{Web_Rosette, 
   title={The Rosette Guide},
   author={Emina Torlak}, 
   url={https://docs.racket-lang.org/rosette-guide/index.html}
 }
-
-
 
 @misc{Web_coq, 
   title={The Coq Proof Assistant},
@@ -2375,8 +2392,6 @@ month={May}
   url={https://coq.inria.fr/},
   note={(Readers from the future or past, please note the web site said ``The Coq team has decided that Coq will be renamed into 'The Rocq Prover'.'' in January 2025.)}
 }
-
-
 
 % Found a reference to this in Neff's 2010 paper, but his URL gave me a 404 (Sept 2024), so, off to visit Mr. Peabody....
 @misc{MB07:DiscreteReport_archived, 
