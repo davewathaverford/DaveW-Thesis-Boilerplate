@@ -24,7 +24,7 @@
 %%%%%%%%             standard structure makes it easy to type the citation in overleaf.com           %%%%%%%%
 %%%%%%%%             if I have to edit these, I'll keep the old label as a comment, e.g. DuBoulay    %%%%%%%%
 %%%%%%%%                                                                                             %%%%%%%%
-%%%%%%%%    Last edits: 2025-07-03                                                                   %%%%%%%%
+%%%%%%%%    Last edits: 2025-08-11 1455 EDT                                                          %%%%%%%%
 %%%%%%%%                                                                                             %%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -395,11 +395,11 @@ series = {Assets '00}
 
 
 % inproceedings{10.5555/645395.651947,
+% isbn = {3540418628},  % took this out to avoid an extra line
 @inproceedings{CFF01:stepper,
 author = {Clements, John and Flatt, Matthew and Felleisen, Matthias},
 title = {Modeling an Algebraic Stepper},
 year = {2001},
-isbn = {3540418628},
 publisher = {Springer-Verlag},
 address = {Berlin, Heidelberg},
 abstract = {Programmers rely on the correctness of the tools in their programming environments. In the past, semanticists have studied the correctness of compilers and compiler analyses, which are the most important tools. In this paper, we make the case that other tools, such as debuggers and steppers, deserve semantic models, too, and that using these models can help in developing these tools.Our concrete starting point is the algebraic stepper in DrScheme, our Scheme programming environment. The algebraic stepper explains a Scheme computation in terms of an algebraic rewriting of the program text. A program is rewritten until it is in a canonical form (if it has one). The canonical form is the final result.The stepper operates within the existing evaluator, by placing breakpoints and by reconstructing source expressions from source information placed on the stack. This approach raises two questions. First, do the run-time breakpoints correspond to the steps of the reduction semantics? Second, does the debugging mechanism insert enough information to reconstruct source expressions?To answer these questions, we develop a high-level semantic model of the extended compiler and run-time machinery. Rather than modeling the evaluation as a low-level machine, we model the relevant low-level features of the stepper's implementation in a high-level reduction semantics. We expect the approach to apply to other semantics-based tools.},
@@ -651,6 +651,21 @@ keywords = {verification, gender, CS1, rigor, recursion, pedagogy, multi-paradig
 location = {St. Louis, Missouri, USA},
 series = {SIGCSE '05}
 }
+@inproceedings{DW05:3-2-1_brief,
+author = {Dougherty, John P. and Wonnacott, David G.},
+title = {Use and Assessment of a Rigorous Approach to CS1},
+year = {2005},
+isbn = {1581139977},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {We have developed and implemented a "rigor-first" approach to CS1 instruction, in which we introduce rigorous techniques for understanding algorithms alongside associated programming skills. This core material is developed through a number of engaging problems from more advanced courses in computer science and other natural sciences. These principles are continued in CS2, and the two courses form our "3-2-1" first-year sequence: three programming paradigms and two models of program execution are explored on a single platform. This article discusses the design of our CS1 course, its role in the computer science curriculum, and our experiences with it. Preliminary assessment suggests this approach has merit in our curriculum.},
+booktitle = {Proceedings of the 36th SIGCSE Technical Symposium on Computer Science Education},
+pages = {251–255},
+numpages = {5},
+keywords = {verification, gender, CS1, rigor, recursion, pedagogy, multi-paradigm},
+location = {St. Louis, Missouri, USA},
+series = {SIGCSE '05}
+}
 
 
 % ACM calls this 10.1145/1047344.1047430
@@ -773,7 +788,7 @@ numpages = {5},
 keywords = {recursion, mental models}
 }
 
-@inproceedings{TH06,
+@inproceedings{TH06_brief,
 author = {Teif, Mariana and Hazzan, Orit},
 year = {2006},
 month = {12},
@@ -1242,6 +1257,21 @@ keywords = {CS1, program visualization, python},
 location = {Denver, Colorado, USA},
 series = {SIGCSE '13}
 }
+@inproceedings{Guo13:PythonTutor_brief,
+author = {Guo, Philip J.},
+title = {Online python tutor: embeddable web-based program visualization for cs education},
+year = {2013},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {This paper presents Online Python Tutor, a web-based program visualization tool for Python, which is becoming a popular language for teaching introductory CS courses. Using this tool, teachers and students can write Python programs directly in the web browser (without installing any plugins), step forwards and backwards through execution to view the run-time state of data structures, and share their program visualizations on the web. In the past three years, over 200,000 people have used Online Python Tutor to visualize their programs. In addition, instructors in a dozen universities such as UC Berkeley, MIT, the University of Washington, and the University of Waterloo have used it in their CS1 courses. Finally, Online Python Tutor visualizations have been embedded within three web-based digital Python textbook projects, which collectively attract around 16,000 viewers per month and are being used in at least 25 universities. Online Python Tutor is free and open source software, available at pythontutor.com.},
+booktitle = {Proceeding of the 44th ACM Technical Symposium on Computer Science Education},
+pages = {579–584},
+numpages = {6},
+keywords = {CS1, program visualization, python},
+location = {Denver, Colorado, USA},
+series = {SIGCSE '13}
+}
+
 
 
 % doi = {10.1145/2483710.2483713},
@@ -1794,6 +1824,28 @@ keywords = {substitution, pedagogy, tracing, recursion},
 location = {Baltimore, Maryland, USA},
 series = {SIGCSE '18}
 }
+@inproceedings{TFK18:Recursion_brief,
+author = {Tunnell Wilson, Preston and Fisler, Kathi and Krishnamurthi, Shriram},
+title = {Evaluating the Tracing of Recursion in the Substitution Notional Machine},
+year = {2018},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {We evaluate a notional machine for recursion based on algebraic substitution. To do
+this, we decompose recursion into a progression of function call patterns, parameter
+name reuse, and data structure complexity. At each stage, we test students' ability
+to trace programs using substitution. We evaluate the correctness of their traces
+along multiple dimensions, finding that students generally do well, and also observe
+shortcuts and identify misconceptions. For comparison, we also have students trace
+two problems using a traditional, imperative notional machine. Even though the substitution
+model is unwieldy to use with compound data, students still perform better with it
+than with the traditional notional machine.},
+booktitle = {Proceedings of the 49th ACM Technical Symposium on Computer Science Education},
+pages = {1023–1028},
+numpages = {6},
+keywords = {substitution, pedagogy, tracing, recursion},
+location = {Baltimore, Maryland, USA},
+series = {SIGCSE '18}
+}
 
 @article{JW18:PythonC,
 author = {Wainer, Jacques and Xavier, Eduardo C.},
@@ -2054,6 +2106,20 @@ keywords = {sustainability, research software, code visualization, Python Tutor}
 location = {Virtual Event, USA},
 series = {UIST '21}
 }
+@inproceedings{guo21:PyTutor_brief,
+author = {Guo, Philip},
+title = {Ten Million Users and Ten Years Later: Python Tutor’s Design Guidelines for Building Scalable and Sustainable Research Software in Academia},
+year = {2021},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+abstract = {Research software is often built as prototypes that never get widespread usage and are left unmaintained after a few papers get published. To counteract this trend, we propose a method for building research software with scale and sustainability in mind so that it can organically grow a large userbase and enable longer-term research. To illustrate this method, we present the design and implementation of Python Tutor (pythontutor.com), a code visualization tool that is, to our knowledge, one of the most widely-used pieces of research software developed within a university lab. Over the past decade, it has been used by over ten million people in over 180 countries. It has also contributed to 55 publications from 35 research groups in 13 countries. We distilled lessons from working on Python Tutor into three sets of design guidelines: 1) user experience design for scale and sustainability, 2) software architecture design for long-term sustainability, and 3) designing a sustainable software development workflow within academia. These guidelines can enable a student to create long-lasting software that reaches many users and facilitates research from many independent groups.},
+booktitle = {The 34th Annual ACM Symposium on User Interface Software and Technology},
+pages = {1235–1251},
+numpages = {17},
+keywords = {sustainability, research software, code visualization, Python Tutor},
+location = {Virtual Event, USA},
+series = {UIST '21}
+}
 
 @inproceedings{10.1145/3505711.3505728,
 author = {Thi Van Pham, Anh and Huu Tran, Thien},
@@ -2168,7 +2234,7 @@ number = {3},
 issn = {1937-4771},
 abstract = {Novice programmers face many challenges when learning to program. Recursion is often considered a particularly difficult challenge. Considerable research has been done to explore the ways in which new students understand recursive code. Our survey of this research suggests that much of the education research focuses on the use of tracing to teach recursion, and to test student understanding thereof.However, a fundamentally different approach is suggested by our informal conversations with faculty who emphasize recursion in the first or second semester. Specifically, many faculty try to develop students' ability to think abstractly about functions they call, and then leverage this thinking to help students think about recursive functions without getting lost in a morass of detail.In this paper, we consider some of the challenges of teaching recursion via abstraction, propose experiments to measure the success of this approach, and report on the results of a preliminary experiment this past spring. We close with our thoughts about pedagogy, the classification of notional machines, and tool support for various types of visualization.},
 journal = {J. Comput. Sci. Coll.},
-month = {nov},
+month = {11},
 pages = {98–106},
 numpages = {9}
 }
@@ -2246,7 +2312,7 @@ numpages = {2}
 
 %% ACM calls this 10.5555/3636988.3637021
 % TO ANONYMIZE DELETE FROM HERE...
-title = {\href{http://cs.haverford.edu/projects/N-Dolphin}{{N}-{D}olphin}: A Visualizer for Abstract Substitution-Based Execution},
+% title = {\href{http://cs.haverford.edu/projects/N-Dolphin}{{N}-{D}olphin}: A Visualizer for Abstract Substitution-Based Execution},
 @article{RW23:NDolphin,
 author = {Reichard, Alex and Wonnacott, David G.},
 title = {{{N}-{D}olphin}: A Visualizer for Abstract Substitution-Based Execution},
@@ -2257,9 +2323,10 @@ address = {Evansville, IN, USA},
 volume = {39},
 number = {3},
 issn = {1937-4771},
+URL = {http://cs.haverford.edu/projects/N-Dolphin},
 abstract = {This paper presents N-Dolphin, a notional-machine visualizer coded in Racket, designed to enhance the learning experience for novice programmers by offering an interactive representation of substitution-based execution of Python code.N-Dolphin aims to make advanced programming concepts more intuitive and accessible to students. The tool offers a variety of code traversal techniques and novel functionality to help a beginner build a solid foundation for abstract reasoning about code and computation. N-Dolphin provides both substitution-based execution and a "step-over" feature, which are not combined in any readily-available tool, despite each, individually, being valuable for teaching challenging topics like recursion. Furthermore, N-Dolphin provides additional symbolic substitution steps, to provide support for symbolic reasoning about code. Finally, it provides an intuitive user interface for students to interact with code and visualize its execution.Although N-Dolphin is written in Racket and supports substitution-based execution, it currently presents code in eclectic-but-legal Python.},
 journal = {J. Comput. Sci. Coll.},
-month = {oct},
+month = {10},
 pages = {267–276},
 numpages = {10}
 }
@@ -2361,13 +2428,29 @@ month={May}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% WEB SITES AND ANYTHING ELSE KIND OF DATE-AMBIGUOUS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+@misc{Web_N_Dolphin,
+  title={N-Dolphin},
+  author={David G. Wonnacott},
+  url={http://cs.haverford.edu/projects/N-Dolphin}
+}
+
+@misc{Web_HERA,
+  title={HERA: The {H}averford {E}ducational {RISC} {A}rchitecture},
+  author={David G. Wonnacott},
+  url={http://cs.haverford.edu/projects/HERA}
+}
+
+@misc{Web_FVtE,
+  title={From Vision to Execution},
+  author={David G. Wonnacott},
+  url={http://cs.haverford.edu/people/davew/FVtE}
+}
+
 @misc{Web_Rosette, 
   title={The Rosette Guide},
   author={Emina Torlak}, 
   url={https://docs.racket-lang.org/rosette-guide/index.html}
 }
-
-
 
 @misc{Web_coq, 
   title={The Coq Proof Assistant},
@@ -2375,8 +2458,6 @@ month={May}
   url={https://coq.inria.fr/},
   note={(Readers from the future or past, please note the web site said ``The Coq team has decided that Coq will be renamed into 'The Rocq Prover'.'' in January 2025.)}
 }
-
-
 
 % Found a reference to this in Neff's 2010 paper, but his URL gave me a 404 (Sept 2024), so, off to visit Mr. Peabody....
 @misc{MB07:DiscreteReport_archived, 
